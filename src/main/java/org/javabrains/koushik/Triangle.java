@@ -17,6 +17,11 @@ public class Triangle {
 	}
 
 
+	public Triangle(String type){
+		
+		this.type=type;
+		
+	}
 
 	public void draw(){
 		

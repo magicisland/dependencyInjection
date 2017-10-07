@@ -4,7 +4,7 @@
 
 <beans>
 	<bean id="triangle" class="org.javabrains.koushik.Triangle">
-		<property name="type" value="equilatero"></property>
+		<constructor-arg value="equilatero"/>
 	</bean>
 
 </beans>
