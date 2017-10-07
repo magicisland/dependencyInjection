@@ -1,45 +1,54 @@
 package org.javabrains.koushik;
 
+
+
 public class Triangle {
 
-	protected String type;
-	protected int height;
+	protected Point pointA;
+	protected Point pointB;
+	protected Point pointC;
+
+
 	
-	
-	
-	
-	public String getType() {
-		return type;
+	public Point getPointA() {
+		return pointA;
 	}
 
 
 
-	public void setType(String type) {
-		this.type = type;
+	public void setPointA(Point pointA) {
+		this.pointA = pointA;
 	}
 
 
-	public Triangle(String type,int height){
-		this.type=type;
-		this.height=height;
-		
+
+	public Point getPointB() {
+		return pointB;
 	}
-	public Triangle(String type){
-		
-		this.type=type;
-		
+
+
+
+	public void setPointB(Point pointB) {
+		this.pointB = pointB;
 	}
+
+
+
+	public Point getPointC() {
+		return pointC;
+	}
+
+
+
+	public void setPointC(Point pointC) {
+		this.pointC = pointC;
+	}
+
+
 
 	public void draw(){
 		
-		System.out.println(" Triangle draw " + getType() +  getHeight());
 		
-		
-	}
-
-
-
-	public int getHeight() {
-		return height;
+		System.out.println( pointA.getX()  +  ", " +  pointB.getY()  + " , " +  pointC.getX());
 	}
 }
