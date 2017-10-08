@@ -3,25 +3,22 @@
 "http://www.springframework.org/dtd/spring-beans.dtd">
 
 <beans>
-	<bean id="triangle" class="org.javabrains.koushik.Triangle">
-		<property name="pointA" ref="point1"></property>
-		<property name="pointB" ref="point2"></property>
-		<property name="pointC" ref="point3"></property>
-
+	<bean id="triangle" class="org.javabrains.koushik.Triangle" autowire="byName">
+	
 	</bean>
 
-	<bean id="point1" class = "org.javabrains.koushik.Point">
+	<bean id="pointA" class = "org.javabrains.koushik.Point">
 		<property name="x" value="10"></property>
 		<property name="y" value="20"></property>
 	</bean>
 	
-	<bean id="point2" class = "org.javabrains.koushik.Point">
+	<bean id="pointB" class = "org.javabrains.koushik.Point">
 		<property name="x" value="010"></property>
 		<property name="y" value="020"></property>
 	</bean>
 
 
-	<bean id="point3" class = "org.javabrains.koushik.Point">
+	<bean id="pointC" class = "org.javabrains.koushik.Point">
 		<property name="x" value="110"></property>
 		<property name="y" value="120"></property>
 	</bean>
