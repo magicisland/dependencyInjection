@@ -1,54 +1,30 @@
 package org.javabrains.koushik;
 
-
+import java.util.List;
 
 public class Triangle {
 
-	protected Point pointA;
-	protected Point pointB;
-	protected Point pointC;
-
+	protected List<Point> points;
+	
 
 	
-	public Point getPointA() {
-		return pointA;
+	public List<Point> getPoints() {
+		return points;
 	}
 
 
 
-	public void setPointA(Point pointA) {
-		this.pointA = pointA;
-	}
-
-
-
-	public Point getPointB() {
-		return pointB;
-	}
-
-
-
-	public void setPointB(Point pointB) {
-		this.pointB = pointB;
-	}
-
-
-
-	public Point getPointC() {
-		return pointC;
-	}
-
-
-
-	public void setPointC(Point pointC) {
-		this.pointC = pointC;
+	public void setPoints(List<Point> points) {
+		this.points = points;
 	}
 
 
 
 	public void draw(){
+	
+			for (Point point:points){
+				System.out.println(" punto : "  + point.getX() + " , " +  point.getY());
+			}
 		
-		
-		System.out.println( pointA.getX()  +  ", " +  pointB.getY()  + " , " +  pointC.getX());
 	}
 }
